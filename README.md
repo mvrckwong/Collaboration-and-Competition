@@ -22,6 +22,10 @@ The environment is considered solved, when the average (over 100 episodes) of th
 
 ## 2. Getting Started:
 
+### Prerequisite:
+
+### Installation:
+
 ## 3. Instructions:
 
 Follow the instructions in `Continuous_Control.ipynb` to get started with training your own agent!
