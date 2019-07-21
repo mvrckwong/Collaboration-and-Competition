@@ -1,10 +1,13 @@
 # Collaboration-and-Competition
 
+## 1. Project Details:
 For the project, I will be working on Tennis Environment developed by Unity. 
 
 
 
 The details of the project from unity as follows:
+
+### Udacity Guidelines
 
 In this environment, two agents control rackets to bounce a ball over a net. If an agent hits the ball over the net, it receives a reward of +0.1. If an agent lets a ball hit the ground or hits the ball out of bounds, it receives a reward of -0.01. Thus, the goal of each agent is to keep the ball in play.
 
@@ -16,3 +19,11 @@ The task is episodic, and in order to solve the environment, your agents must ge
  - This yields a single score for each episode.
 
 The environment is considered solved, when the average (over 100 episodes) of those scores is at least +0.5.
+
+## 2. Getting Started:
+
+## 3. Instructions:
+
+## 4. Running the Tests:
+
+## 5. Further Testing:
