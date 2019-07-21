@@ -3,7 +3,7 @@
 ## 1. Project Details:
 For the project, I will be working on Tennis Environment developed by Unity. 
 
-<p align=center><img src="images/tennis.png" alt="scores" width="500"/></p>
+<p align=center><img src="images/tennis.png" alt="scores" width="700"/></p>
 
 The details of the project from unity as follows:
 
