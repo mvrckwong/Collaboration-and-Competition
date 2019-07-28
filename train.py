@@ -7,8 +7,35 @@ from agent import Agent
 from collections import deque
 
 
+### Interpret the Environment / De-Code the Environment
+def check_env(env, summary=True):
+    # Default Brain
+    brain_name = env.brain_names[0]
+    brain = env.brains[brain_name]
+
+    # Reset the Environment
+    env_info = env.reset(train_mode=True)[brain_name]
+
+    # Number of Agents Available
+    n_agents = len(env_info.agents)
+
+    # Size of Each Action
+    action_size = brain.vector_action_space_size
+
+    # Examine the State Space
+    states = env_info.vector_observations
+    state_size = states.shape[1]
+
+    if summary==True:
+        print("---------------------------------------------------------------------------")
+        print("Number of agents: {}".format(n_agents))
+        print("Size of each action: {}".format(action_size))
+        print("There are {} agents. Each observes a state with length {}.".format(states.shape[0], state_size))
+        print("---------------------------------------------------------------------------")
+    return state_size, action_size, n_agents
+
 ### Initialize the Agent
-class initialize:
+class initialize_MADDPG:
     def __init__(self,
                  env=None,
                  name="MADDPG",
@@ -19,9 +46,7 @@ class initialize:
         self.env = env
         self.name = name
 
-        self.state_size = None
-        self.action_size = None
-        self.n_agents = None
+        self.state_size, self.action_size, self.n_agents = check_env(self.env, True)
         self.agent = Agent(self.state_size, self.action_size, random_seed)
 
         self.n_episodes = n_episodes
@@ -103,3 +128,21 @@ class initialize:
                 if np.any(dones):                                       # exit loop if episode finished
                     break
             print('Score (max over agents) from episode {}: {}'.format(i, np.max(scores)))
+
+    def plot_process(self, scores_agent):
+        fig = plt.figure(figsize=(16,5))
+        ax = fig.add_subplot(111)
+        plt.plot(np.arange(1, len(scores_agent)+1), scores)
+
+        plt.grid(which="major", alpha=0.30)
+        plt.title('MADDPG')
+        plt.ylabel('Avg Score across all Agents')
+        plt.xlabel('Number of Episode')
+        plt.savefig('Scores.png')
+        plt.legend(loc=0)
+        plt.show()
+
+
+
+
+if __name__ == '__main__':
