@@ -28,3 +28,5 @@ Maximum Number of Timesteps per Episodes: 2000
 ## 3. Final Results and Takeaways:
 
 ## 4. Further Improvements / Further Works
+
+I would try to train the agents in MAPPO or Multi-Agent Proximal Policy Optimization. I would want to compare the results with MADDPG.
