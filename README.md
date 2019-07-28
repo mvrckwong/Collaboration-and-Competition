@@ -24,11 +24,13 @@ The environment is considered solved, when the average (over 100 episodes) of th
 
 ### Prerequisite:
 
+Install the following guidelines in order to do the following repository:
+
 ### Installation:
 
 ## 3. Instructions:
 
-Follow the instructions in `Continuous_Control.ipynb` to get started with training your own agent!
+Follow the instructions in `Collaboration_Competition.ipynb` to get started with training your own agent!
 
 ## 4. Running the Tests:
 
