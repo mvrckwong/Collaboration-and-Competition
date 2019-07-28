@@ -1,5 +1,3 @@
-## Checking if the following is working
-
 # Collaboration-and-Competition
 
 ## 1. Project Details:
