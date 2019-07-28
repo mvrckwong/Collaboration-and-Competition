@@ -20,18 +20,11 @@ The task is episodic, and in order to solve the environment, your agents must ge
 
 The environment is considered solved, when the average (over 100 episodes) of those scores is at least +0.5.
 
-## 2. Getting Started:
 
-### Prerequisite:
+## 2. Instructions:
 
-Install the following guidelines in order to do the following repository:
+Follow the instructions in `Tennis.ipynb` to get started with training your own agent!
 
-### Installation:
+## 3. Running the Tests:
 
-## 3. Instructions:
-
-Follow the instructions in `Collaboration_Competition.ipynb` to get started with training your own agent!
-
-## 4. Running the Tests:
-
-## 5. Further Testing:
+## 4. Further Testing:
