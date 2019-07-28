@@ -1,7 +1,9 @@
+## Checking if the following is working
+
 # Collaboration-and-Competition
 
 ## 1. Project Details:
-For the project, I will be working on Tennis Environment developed by Unity. 
+For the project, I will be working on Tennis Environment developed by Unity.
 
 <p align=center><img src="images/tennis.png" alt="scores" width="700"/></p>
 
