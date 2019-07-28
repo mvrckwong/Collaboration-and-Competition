@@ -24,6 +24,8 @@ The environment is considered solved, when the average (over 100 episodes) of th
 
 ### Prerequisite:
 
+Install the following guidelines in order to do the following repository:
+
 ### Installation:
 
 ## 3. Instructions:
