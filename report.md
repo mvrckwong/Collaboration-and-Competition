@@ -2,6 +2,8 @@
 
 ## 1. Multi-Agent Deep Deterministic Policy Gradient
 
+Multi-Agent DDPG trains two agents in parallel. Based on the rewarding system of the environment, the agent collaborates and competes. "Just doing a simple extension of single agent RL by independently training the two agents does not work very well because the agents are independently updating their policies as learning progresses. And this causes the environment to appear non-stationary from the viewpoint of any one agent."
+
 ## 2. Summary of Params and Hyperparams of the Agent of the Network
 
 *Network Hyperparameters:*
