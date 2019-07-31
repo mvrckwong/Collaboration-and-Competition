@@ -4,6 +4,7 @@ import numpy as np
 from agent import Agent
 from collections import deque
 
+import matplotlib.pyplot as plt
 import torch
 
 # Environment !!!
@@ -26,20 +27,18 @@ action_size = brain.vector_action_space_size
 states = env_info.vector_observations
 state_size = states.shape[1]
 
-
 agent = Agent(state_size, action_size, random_seed=5)
 
 def checkpoint(i_episode, scores_window, scores):
-    print("\rEpisode {}\t\tAvg Score: {:.2f}\t\tMax Score: {:2f}".format(i_episode, np.mean(scores_window), np.max(scores)), end="")
+    print("\rEpisode {}\t\tAvg Score: {:.2f}\t\tMax Score: {:.2f}".format(i_episode, np.mean(scores_window), np.max(scores)), end="")
     if i_episode % 100 == 0:
-        print("\rEpisode {}\t\tAvg Score: {:2f}".format(i_episode, np.mean(scores_window), np.mean(scores)))
+        print("\rEpisode {}\t\tAvg Score: {:.2f}".format(i_episode, np.mean(scores_window), np.mean(scores)))
     if i_episode % 200 == 0:
         torch.save(agent.actor_local.state_dict(), 'checkpoint_{}_actor.pth'.format(i_episode))
         torch.save(agent.critic_local.state_dict(), 'checkpoint_{}_critic.pth'.format(i_episode))
 
 def plot_process(scores):
     fig = plt.figure(figsize=(16,5))
-    ax = fig.add_subplot(111)
     plt.plot(np.arange(1, len(scores)+1), scores)
 
     plt.grid(which="major", alpha=0.30)
@@ -49,7 +48,6 @@ def plot_process(scores):
     plt.savefig('Scores.png')
     plt.legend(loc=0)
     plt.show()
-
 
 # Train MADDPG
 def train(n_episodes=40000,
@@ -92,7 +90,6 @@ def train(n_episodes=40000,
             torch.save(agent.critic_local.state_dict(), 'final_checkpoint_critic.pth')
             break
     return scores_agents
-
 
 
 if __name__ == '__main__':
