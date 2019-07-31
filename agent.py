@@ -10,15 +10,15 @@ import torch
 import torch.nn.functional as F
 import torch.optim as optim
 
-BUFFER_SIZE = int(1e5)
-BATCH_SIZE = 512
+BUFFER_SIZE = int(1e4)
+BATCH_SIZE = 128
 GAMMA = 0.99
-TAU = 5e-2
+TAU = 7e-2
 LR_ACTOR = 1e-4
 LR_CRITIC = 5e-4
 WEIGHT_DECAY = 0
-UPDATE_EVERY = 5
-NUM_UPDATES = 10
+UPDATE_EVERY = 2
+NUM_UPDATES = 20
 
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
