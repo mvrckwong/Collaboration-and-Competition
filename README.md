@@ -22,8 +22,4 @@ The environment is considered solved, when the average (over 100 episodes) of th
 
 ## 2. Instructions:
 
-Follow the instructions in `Tennis.ipynb` to get started with training your own agent!
-
-## 3. Running the Tests:
-
-## 4. Further Testing:
+Download the following reposity. To train the agent, open command line then type in `python train.py`.
