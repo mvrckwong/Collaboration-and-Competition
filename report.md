@@ -8,23 +8,23 @@ MADDPG is a type of Actor-Critic based methods in reinforcement learning. Main d
 
 *Network Hyperparameters:*
 ```
-TAU = 5e-2
-LR_ACTOR = 1e-4         # learning rate of the actor model
-LR_CRITIC = 5e-4        # learning rate of the critic model
+TAU = 7e-2
+LR_ACTOR = 1e-4
+LR_CRITIC = 5e-4
 ```
 *Agent Parameters / Hyperparameters:*
 ```
-BUFFER_SIZE = int(1e5)  # replay buffer size
-BATCH_SIZE = 512        # minibatch size
-GAMMA = 0.99            # discount factor
-WEIGHT_DECAY = 0        # L2 weight decay
-UPDATE_EVERY = 5        # update actor and critic every UPDATE_EVERY steps
-NUM_UPDATES = 10        # update NUM_UPDATES times
+BUFFER_SIZE = int(1e4)
+BATCH_SIZE = 128
+GAMMA = 0.99
+WEIGHT_DECAY = 0
+UPDATE_EVERY = 2
+NUM_UPDATES = 20
 ```
 *Training Parameters:*
 ```
 Total Number of Episodes: 25000
-Maximum Number of Timesteps per Episodes: 500
+Maximum Number of Timesteps per Episodes: 700
 ```
 
 ## 3. Final Results and Takeaways:
