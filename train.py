@@ -93,5 +93,5 @@ def train(n_episodes=40000,
 
 
 if __name__ == '__main__':
-    scores = train(n_episodes=25000, n_timesteps=700)
+    scores = train(n_episodes=30000, n_timesteps=700)
     plot_process(scores)
