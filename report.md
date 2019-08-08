@@ -29,7 +29,7 @@ Maximum Number of Timesteps per Episodes: 700
 
 ## 3. Results
 
-<p align=center><img src="images/Scores.png" alt="scores" width="700"/></p>
+<p align=center><img src="images/Scores.png" alt="scores" width="1000"/></p>
 
 The environment has been solved around 3124 number of episodes. The Batch size, buffer size and tau learning rate was fine tuned in order to achieved the desired results in a faster episodes.
 
