@@ -60,6 +60,7 @@ def plot_process(scores):
 # Train MADDPG
 def train(n_episodes=40000,
           n_timesteps=500):
+    
     scores_window = deque(maxlen=100)
     scores_agents = []
 
