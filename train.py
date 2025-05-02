@@ -10,7 +10,12 @@ import matplotlib.pyplot as plt
 import torch
 
 # Environment !!!
-env = UnityEnvironment(file_name="Tennis_Windows_x86_64/Tennis.exe")
+env = UnityEnvironment(
+    file_name="Tennis_Windows_x86_64/Tennis.exe", 
+    seed=1, 
+    side_channels=[], 
+    no_graphics=True
+)
 
 # get the default brain
 brain_name = env.brain_names[0]

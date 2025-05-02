@@ -1,4 +1,6 @@
 import numpy as np
+from numpy import random
+
 import torch
 
 from collections import deque, namedtuple
