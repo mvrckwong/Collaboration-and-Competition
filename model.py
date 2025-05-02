@@ -75,3 +75,7 @@ class Critic(nn.Module):
         #x = self.dropout(x)
         x = self.fc3(x)
         return x
+
+
+if __name__ == "__main__":
+    None
