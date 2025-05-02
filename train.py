@@ -14,7 +14,8 @@ env = UnityEnvironment(
     file_name="Tennis_Windows_x86_64/Tennis.exe", 
     seed=1, 
     side_channels=[], 
-    no_graphics=True
+    no_graphics=True,
+    timeout_wait=120
 )
 
 # get the default brain
