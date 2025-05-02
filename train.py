@@ -1,4 +1,6 @@
-from unityagents import UnityEnvironment
+#from unityagents import UnityEnvironment
+
+from mlagents_envs.environment import UnityEnvironment
 import numpy as np
 
 from agent import Agent
